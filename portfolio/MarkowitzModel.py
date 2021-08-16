@@ -7,7 +7,7 @@ import scipy.optimize as optimisation
 import datetime as dt
 
 NUM_TRADING_DAYS = 252
-NUM_PORTFOLIOS = 100000
+NUM_PORTFOLIOS = 10000
 stocks = ['AAPL', 'WMT', 'TSLA', 'GE', 'AMZN', 'DB']
 
 start_date = dt.datetime(2010, 1, 1)
