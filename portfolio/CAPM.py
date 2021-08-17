@@ -36,7 +36,7 @@ class CAPM:
         covariance_matrix = np.cov(
             self.data["s_returns"], self.data["m_returns"])
         beta = covariance_matrix[0, 1] / covariance_matrix[1, 1]
-        print("beta from formula: ", beta)
+        print("Beta from formula: ", beta)
 
     def regression(self):
         beta, alpha = np.polyfit(
