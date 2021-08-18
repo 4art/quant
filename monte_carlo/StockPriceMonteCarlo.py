@@ -19,6 +19,7 @@ def stock_monte_carlo(S0, mu, sigma, N=TRADE_DAYS_IN_YEAR):
         result.append(prices)
     simulation_data = pd.DataFrame(result)
     simulation_data = simulation_data.T
+    print('create multiple stochastic random walks')
     plt.plot(simulation_data)
     plt.show()
 
