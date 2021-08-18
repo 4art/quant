@@ -19,11 +19,13 @@ def stock_monte_carlo(S0, mu, sigma, N=TRADE_DAYS_IN_YEAR):
         result.append(prices)
     simulation_data = pd.DataFrame(result)
     simulation_data = simulation_data.T
+    plt.plot(simulation_data)
+    plt.show()
 
     simulation_data['mean'] = simulation_data.mean(axis=1)
+    print("Prediction for future price: $%.2f" % simulation_data['mean'].tail(1))
 
     plt.plot(simulation_data['mean'])
-    print("Prediction for future price: $%.2f" % simulation_data['mean'].tail(1))
     plt.show()
 
 if __name__ == '__main__':
