@@ -37,6 +37,6 @@ if __name__ == '__main__':
     # call price according to Black-Scholes model
     call = call_option_price(S0, E, T, rf, sigma)
     put = put_option_price(S0, E, T, rf, sigma)
-    print("call price according to Black-Scholes model: ", call)
-    print("put price according to Black-Scholes model: ", put)
+    print("call price according to Black-Scholes model: %.2f" % call)
+    print("put price according to Black-Scholes model: %.2f" % put)
     
