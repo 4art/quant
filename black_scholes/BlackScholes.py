@@ -11,9 +11,6 @@ def call_option_price(S: float, E: float, T: float, rf: float, sigma: float) -> 
     d2: float = d1-sigma*sqrt(T)
     print("call option d1: %s, d2: %s" % (d1, d2))
     # use the N(x) to calculate a price of the option
-    sd1 = stats.norm.cdf(d1)
-    sd2 = stats.norm.cdf(d2)
-    e = exp(-rf * T)
     return S * stats.norm.cdf(d1) - E * exp(-rf * T) * stats.norm.cdf(d2)
 
 # S(stock price), E(strike price), t(time to exp), rf(risk free rate), sigma (vol or standart deviation)
