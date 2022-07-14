@@ -1,4 +1,7 @@
 Time-Series-Analysis/
 .ipynb_*
+.vscode/
+.ipynb_checkpoints/
 .venv/
 .idea/
+*/__pycache__/
